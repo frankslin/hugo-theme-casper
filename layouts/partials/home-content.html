@@ -1,11 +1,12 @@
     {{ range .Data.Pages }}
-        {{if eq .Type "index" }}
+        {{if eq .Type "welcome" }}
         <div class="index-content post">
+        <h2>{{.Title}}</h2>
         {{.Content}}
         </div>
         {{end}}
     {{ end }}
-
+<!--
     {{ if not ($.Scratch.Get "paginatedSections") }}
         {{ if .Site.Params.paginatedsections }}
             {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedsections }}
@@ -27,3 +28,4 @@
     {{ end }}
 
     {{ partial "pagination.html" $paginator }}
+-->

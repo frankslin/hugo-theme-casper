@@ -1263,7 +1263,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .post-head.main-header {
-    height: 65vh;
+    height: 100px;
     min-height: 180px;
 }
 
@@ -1636,7 +1636,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-head.main-header {
-        height:45vh;
+        height: 45vh;
     }
 
     .tag-head.main-header,
