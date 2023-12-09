@@ -89,8 +89,12 @@
     {{ if .Site.Params.customHeaderPartial }}
         {{ partial .Site.Params.customHeaderPartial . }}
     {{ end }}
+
+    <link rel="stylesheet" href="/vendor/dimbox-1.0.0/dist/css/dimbox.min.css" />
 </head>
 <body class="nav-closed">
+  <script src="/vendor/dimbox-1.0.0/dist/js/dimbox.min.js"></script>
+  <script>dimbox.setConfig({showDownloadButton: false});</script>
 
   {{ partial "navigation.html" . }}
 
