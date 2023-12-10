@@ -10,7 +10,7 @@ nav.breadcrumb li a {
   text-decoration: none;  
 }
 nav.breadcrumb li a:after {
-  content: " >"; 
+  content: " > "; 
 }
 
   nav.navpage {
