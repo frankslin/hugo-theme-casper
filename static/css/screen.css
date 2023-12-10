@@ -1037,6 +1037,11 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 
+.post-feature-image {
+    float: right;
+    padding-left: 20px;
+}
+
 .post-excerpt p {
     margin: 0;
     font-size: 0.9em;

@@ -1,14 +1,25 @@
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+
 <article class="post {{ .Section }}">
     <header class="post-header">
         <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     </header>
-    <section class="post-excerpt">
+    <div>
+        {{ if $featured_image }}
+        <div class="post-feature-image">
+            <a href="{{.RelPermalink}}">
+              <img src="{{ $featured_image }}" class="featured_image" alt="Featured image from {{ .Title }}" height="150px">
+            </a>
+        </div>
+        {{ end }}
+        <section class="post-excerpt">
         {{if .Params.excerpt }}
             <p>{{ .Params.excerpt }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
         {{else}}
             <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
         {{end}}
     </section>
+    </div>
     <footer class="post-meta">
         
 
