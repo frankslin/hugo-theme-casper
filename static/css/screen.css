@@ -604,6 +604,10 @@ body.nav-opened .site-wrapper {
     font-size: 2em;
 }
 
+.main-header-content {
+    padding-top: 12vh;
+}
+
 .main-nav {
     position: relative;
     padding: 35px 40px;
@@ -961,12 +965,13 @@ body.nav-opened .menu-button .word {
 
 .page-description {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.5em;
     font-weight: 400;
     font-family: "Merriweather", serif;
+    font-weight: bold;
     letter-spacing: 0.01rem;
-    color: rgba(255,255,255,0.8);
+    color: #fff;
 }
 
 .no-cover.main-header {
