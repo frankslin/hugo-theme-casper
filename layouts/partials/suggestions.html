@@ -1,5 +1,6 @@
 {{ `<!-- partials/suggestions.html -->` | safeHTML }}
 
+{{ if not (.Param "disable_suggestions") }}
 <aside class="read-next">
   {{ with .PrevInSection }}
       <a class="read-next-story prev" style="{{ if .Params.image }}background-image: url({{ .Params.image  | relURL}}){{ else }}no-cover{{ end }}" href="{{ .RelPermalink }}">
@@ -17,3 +18,4 @@
       </a>
   {{ end }}
 </aside>
+{{ end }}
