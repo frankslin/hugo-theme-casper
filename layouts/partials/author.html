@@ -1,3 +1,4 @@
+{{ `<!-- partials/author.html -->` | safeHTML }}
 {{ if not .Params.noauthor }}
 {{ if or .Params.author .Site.Params.author}}
 {{$authorname := or .Params.author .Site.Params.author }}
